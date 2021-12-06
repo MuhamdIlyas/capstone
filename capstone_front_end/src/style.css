@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.content{
+  justify-content: center;
+  width: 100%;
+}
+
+.color-container {
+  background-color: #ccf5ff;
+  width: 100%;
+}
+
+.color-header{
+  background-color: 	rgba(0, 0, 0, .85);
+}
+
+header a {
+  color: aliceblue;
+}
+
+.c-footer{
+  color: rgb(143, 143, 143);
+}
+
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+  
