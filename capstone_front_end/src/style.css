@@ -14,22 +14,17 @@
 }
 
 .color-container {
-  background-color: #ccf5ff;
+  background-color: #004d66;
   width: 100%;
-}
-
-.color-header{
-  background-color: 	rgba(0, 0, 0, .85);
-}
-
-header a {
-  color: aliceblue;
 }
 
 .c-footer{
   color: rgb(143, 143, 143);
 }
 
+.predict{
+  text-align: center;
+}
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {

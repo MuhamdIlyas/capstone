@@ -8,32 +8,33 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Water Quality</title>
-
-    
-    <!-- Favicons -->
-    <!-- <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico"> -->
     <meta name="theme-color" content="#7952b3">
     <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header class="color-header site-header sticky-top py-1">
-      <nav class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#" aria-label="Product">
-          <img src="img/image-png.png" alt="logo" width="24" height="24">
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    <header class="site-header sticky-top py-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="color-font container">
+            <a class="navbar-brand" style="color: aliceblue;" href="#">
+                <h1>Water-C</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#main" class="btn btn-outline-secondary" type="button">Find
+                            Predict
+                            <i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
       </nav>
     </header>
 
@@ -41,7 +42,7 @@
       <!-- Dashboard -->
       <div class="color-container position-relative overflow-hidden p-3 p-md-5 text-center jumbotron rounded-3">
         <div class="container row mx-auto my-3">
-            <section class="col-lg-5 col-md-5 col-12 text-center m-auto">
+            <section class="col-lg-5 col-md-5 col-12 text-center m-auto" style="color: aliceblue">
               <h1 class="display-4 fw-bold">Water For Life</h1>
               <p class="lead fw-normal">The pH level is actually a measure to measure the relative levels of free hydrogen ions and hydroxyl ions in water.</p>
               <a class="btn btn-outline-secondary" href="#">Coming soon</a>
@@ -55,48 +56,36 @@
         </div>
       </div>
       
+      <!-- Main -->
       <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom">Hanging icons</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <h2 class="pb-2 border-bottom text-center">Water Clasification</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 predict">
           <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <img src="img/image-png.png" alt="logo" width="24" height="24">
-            </div>
-            <div>
-              <h2>Featured title</h2>
-              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              <a href="#" class="btn btn-primary">
-                Primary button
-              </a>
+            <div class="input-field col s4">
+              <label><b>Temperature</b></label>
+              <br>
+              <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" class="validate">
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <img src="img/image-png.png" alt="logo" width="24" height="24">
-            </div>
-            <div>
-              <h2>Featured title</h2>
-              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              <a href="#" class="btn btn-primary">
-                Primary button
-              </a>
+            <div class="input-field col s4">
+              <label><b>Temperature</b></label>
+              <br>
+              <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" class="validate">
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <img src="img/image-png.png" alt="logo" width="24" height="24">
-            </div>
-            <div>
-              <h2>Featured title</h2>
-              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              <a href="#" class="btn btn-primary">
-                Primary button
-              </a>
+            <div class="input-field col s4">
+              <label><b>Temperature</b></label>
+              <br>
+              <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" class="validate">
             </div>
           </div>
         </div>
+        <div class="predict">
+          <button type="button" class="btn btn-secondary" id="predict">Predict</button>
+        </div>
       </div>
-    
 
     <footer class="bg-dark c-footer text-center text-lg-start mt-4">
       <div class="footer-text text-center p-2">
