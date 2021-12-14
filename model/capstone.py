@@ -11,8 +11,6 @@ Original file is located at
 **Import Library**
 """
 
-! pip install kaggle
-
 #melakukan import library
 import numpy as np
 import pandas as pd
