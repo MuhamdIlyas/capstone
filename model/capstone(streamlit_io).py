@@ -11,7 +11,10 @@ Original file is located at
 **Import Library**
 """
 
+!pip install streamlit
+
 #melakukan import library
+import streamlit as st
 import numpy as np
 import pandas as pd
 from plotly.subplots import make_subplots
