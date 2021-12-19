@@ -16,13 +16,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-"""**Meload dataste dari github**"""
-
-# load dataset
-url = 'https://raw.githubusercontent.com/muhamadilyas17/capstone/main/water_potability.csv'
-kualitas_air = pd.read_csv(url)
-kualitas_air
-
 def welcome():
   return 'welcome all'
 
