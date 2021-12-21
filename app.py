@@ -38,7 +38,6 @@ def prediction(ph1, Hardness1, Solids1, Chloramines1, Sulfate1):
   else:
     Chloramines[3]=1
 
-<<<<<<< HEAD
   if Solids1>=100 and Solids1<600:
     Solids[0]=1
   if Solids1>=600 and Solids1<1000:
@@ -60,43 +59,13 @@ def prediction(ph1, Hardness1, Solids1, Chloramines1, Sulfate1):
     Hardness[3]=1
 
   if ph1>=0 and ph1<6.5:
-=======
-def prediction(ph1):
-  ph = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-  if ph1>=0 and ph<1:
->>>>>>> cd48d2cea0a3d50092a56a8e805a1286d56104e0
     ph[0]=1
   elif ph1>=6.5 and ph1<8.5:
     ph[1]=1
   elif ph1>=8.5:
     ph[2]=1
-<<<<<<< HEAD
   else:
     ph[3]=1
-=======
-  elif ph1>=3 and ph<4:
-    ph[3]=1
-  elif ph1>=4 and ph<5:
-    ph[4]=1
-  elif ph1>=5 and ph<6:
-    ph[5]=1
-  elif ph1>=6 and ph<8:
-    ph[6]=1
-  elif ph1>=8 and ph<9:
-    ph[7]=1
-  elif ph1>=9 and ph<10:
-    ph[8]=1
-  elif ph1>=10 and ph<11:
-    ph[9]=1
-  elif ph>=11 and ph<12:
-    ph[10]=1
-  elif ph1>=12 and ph<13:
-    ph[11]=1
-  elif ph1>=13 and ph<14:
-    ph[12]=1
-  else:
-    ph[13]=1
->>>>>>> cd48d2cea0a3d50092a56a8e805a1286d56104e0
 
 
   prediction = classifier.predict(
@@ -104,45 +73,11 @@ def prediction(ph1):
   
   return prediction
 
-def result(zat1):
-  zat = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-  if zat1=="Asam Sulfat":
-    zat[0]=1
-  elif zat1=="Asam Sitrat":
-    zat[1]=1
-  elif zat1=="Asam Askarbonat":
-    zat[2]=1
-  elif zat1=="Asam Nitrat":
-    zat[3]=1
-  elif zat1=="Asam Chlorogenic":
-    zat[4]=1
-  elif zat1=="Asam Amino":
-    zat[5]=1
-  elif zat1=="Air Netral":
-    zat[6]=1
-  elif zat1=="Natrium Bikarbonat":
-    zat[7]=1
-  elif zat1=="Alkali":
-    zat[8]=1
-  elif zat1=="Amonia":
-    zat[9]=1
-  elif zat1=="Natrium":
-    zat[10]=1
-  elif zat1=="Natrium Hipoklorit":
-    zat[11]=1
-  elif zat1=="Natrium Hidroksida":
-    zat[12]=1
-  else:
-    zat[13]=1
-  
-  return result
-
 def main():
   st.title("Prediksi Air")
   html_temp=""
   ans=0
   st.markdown(html_temp,unsafe_allow_html=True)
-<<<<<<< HEAD
   get_ph = st.slider("PH Air ?", min_value=1,max_value=14, value=1)
   get_Hardness = st.slider("Kesahadan Air ?",min_value=1,max_value=400, value=1)
   get_Sulfate = st.slider("Kegunaan Sulfat ?", min_value=100,max_value=500, value=100)
@@ -157,16 +92,6 @@ def main():
     else:
       st.success('Air Tercemar 😥')
       st.image('img/tercemar.jpg')
-=======
-  get_ph = st.slider("Water PH ?", min_value=1,max_value=14, value=25)
-
-  if st.button("Predict"):
-    ans=prediction(get_ph)[0]
-    if ans==0:
-      st.success('Air Sehat')
-    else:
-      st.success('Air Berpolusi')
->>>>>>> cd48d2cea0a3d50092a56a8e805a1286d56104e0
 
 if __name__=='__main__':
   main()
